@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 try:
-    # Load your data
+    # Load the data
     logger.info("Loading data...")
     data = pd.read_csv("../HR_Employee-Analytics.csv")
     

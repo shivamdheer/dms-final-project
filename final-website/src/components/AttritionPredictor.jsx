@@ -39,7 +39,6 @@ const AttritionPredictor = () => {
   const [error, setError] = useState(null);
   const [predictionDetails, setPredictionDetails] = useState(null);
 
-  // Inside handleSubmit function of AttritionPredictor.jsx
 const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -61,12 +60,12 @@ const handleSubmit = async (e) => {
       }
 
       const data = await response.json();
-      console.log('Received response:', data); // Add this line
+      console.log('Received response:', data); 
       setPrediction(data.prediction);
       setPredictionDetails(data);
       setShowResult(true);
     } catch (err) {
-      console.error('Error details:', err); // Add this line
+      console.error('Error details:', err); 
       setError(err.message || 'Failed to get prediction. Please try again.');
     } finally {
       setLoading(false);
@@ -75,7 +74,6 @@ const handleSubmit = async (e) => {
 
 const handleInputChange = (e) => {
     const { name, value } = e.target;
-    // Ensure numeric fields are treated as numbers
     const numericFields = ['monthlyIncome', 'age', 'dailyRate', 'monthlyRate', 'hourlyRate', 'totalWorkingYears', 'yearsAtCompany', 'yearsSinceLastPromotion'];
     
     const processedValue = numericFields.includes(name) 
