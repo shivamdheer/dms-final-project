@@ -22,6 +22,7 @@
 ---
 
 ## **Project Overview**
+
 The **Employee Attrition Predictor** is a comprehensive web application designed to assist organizations in identifying employees at risk of attrition. By leveraging machine learning models and data analytics, this system predicts the likelihood of employee turnover and provides actionable insights to help HR teams develop effective retention strategies.
 
 ### **Key Features**
